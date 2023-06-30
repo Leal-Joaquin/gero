@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+main{
+  width: 90%;
+  margin: 2em auto;
+}
+.main{
+  margin: 0;
+  width: 100%;
+}
+body {
+  background-color: dimgray;
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*--------PRINCIPIO DEL HEATER---------*/
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: darkblue;
+  min-height: 70px;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 100px;
+  margin-right: 10px;
+}
+nav a {
+  color: white;
+  font-weight: 600;
+  padding-right: 15px;
+  &:hover {
+      transform: scale(1.1);
+      color: beige;
+      transition: 0.2s;
+  }
+}
+
+@media screen and (max-width:700px) {
+  header {
+      flex-direction: column;
+  }
+
+  nav {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+  }
+}
